@@ -1,0 +1,15 @@
+{
+  "name": "widgets-with-browserify---front",
+  "description": "Widgets with browserify demo: Front-end dependencies",
+  "author": "Olivier Philippon <olivier.philippon@knplabs.com> (http://rougemine.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "foundation-sites": "^6.2.0",
+    "insert-css": "^0.2.0",
+    "jquery": "^2.2.1",
+    "lodash": "^4.6.1",
+    "pikaday": "^1.4.0",
+    "sprintf-js": "^1.0.3",
+    "tipso": "^1.0.8"
+  }
+}

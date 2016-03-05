@@ -1,0 +1,225 @@
+<!-- downloaded from http://foundation.zurb.com/templates.html -->
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="/css/demo-app-bundle.css">
+</head>
+<body>
+
+<div class="top-bar" data-widget-module-id="demo-app/widgets/test">
+    <div class="row">
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">Yeti Store</li>
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><input type="search" placeholder="Search"></li>
+                <li>
+                    <button type="button" class="button">Search</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="row columns">
+    <nav aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li class="disabled">Gene Splicing</li>
+            <li>
+                <span class="show-for-sr">Current: </span> Cloning
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="row">
+    <div class="medium-6 columns">
+        <img class="thumbnail" src="http://placehold.it/650x350">
+
+        <div class="row small-up-4">
+            <div class="column">
+                <img class="thumbnail js-widget" src="http://placehold.it/250x200"
+                    data-widget-module-id="demo-app/widgets/tooltip"
+                    data-tooltip-content="How are you keeping today?"
+                >
+            </div>
+            <div class="column">
+                <img class="thumbnail" src="http://placehold.it/250x200"
+                     data-widget-module-id="demo-app/widgets/tooltip"
+                     data-tooltip-content="Not too bad, thank you."
+                     data-tooltip-bg-color="navy"
+                >
+            </div>
+            <div class="column">
+                <img class="thumbnail" src="http://placehold.it/250x200">
+            </div>
+            <div class="column">
+                <img class="thumbnail" src="http://placehold.it/250x200">
+            </div>
+        </div>
+    </div>
+    <div class="medium-6 large-5 columns">
+        <h3>My Awesome Product</h3>
+
+        <form action="/form" method="POST" data-widget-module-id="demo-app/widgets/ajax-form">
+            <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque
+                faucibus vestibulum.
+            </p>
+            <input type="text" name="date"
+                data-widget-module-id="demo-app/widgets/date-picker"
+                placeholder="Click here to pick a day">
+            <label>Size
+                <select name="size">
+                    <option value="husker">Small</option>
+                    <option value="starbuck">Medium</option>
+                    <option value="hotdog">Large</option>
+                    <option value="apollo">Yeti</option>
+                </select>
+            </label>
+
+            <div class="row">
+                <div class="small-3 columns">
+                    <label for="middle-label" class="middle">Quantity</label>
+                </div>
+                <div class="small-9 columns">
+                    <input type="email" name="email" id="middle-label" value="mario@plumber.it">
+                </div>
+            </div>
+            <button type="submit" class="button large expanded">Buy Now</button>
+        </form>
+        <div class="small secondary expanded button-group">
+            <a class="button">Facebook</a>
+            <a class="button">Twitter</a>
+            <a class="button">Yo</a>
+        </div>
+    </div>
+</div>
+<div class="column row">
+    <hr>
+    <ul class="tabs" data-tabs id="example-tabs">
+        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Reviews</a></li>
+        <li class="tabs-title"><a href="#panel2">Similar Products</a></li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="example-tabs">
+        <div class="tabs-panel is-active" id="panel1">
+            <h4>Reviews</h4>
+
+            <div class="media-object stack-for-small">
+                <div class="media-object-section">
+                    <img class="thumbnail" src="//:0" data-widget-module-id="demo-app/widgets/lorem-picture">
+                </div>
+                <div class="media-object-section">
+                    <h5>Mike Stevenson</h5>
+
+                    <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An
+                        idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It
+                        can grow to define or destroy you.</p>
+                </div>
+            </div>
+            <div class="media-object stack-for-small">
+                <div class="media-object-section">
+                    <img class="thumbnail" src="//:0" data-widget-module-id="demo-app/widgets/lorem-picture">
+                </div>
+                <div class="media-object-section">
+                    <h5>Mike Stevenson</h5>
+
+                    <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An
+                        idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It
+                        can grow to define or destroy you</p>
+                </div>
+            </div>
+            <div class="media-object stack-for-small">
+                <div class="media-object-section">
+                    <img class="thumbnail" src="//:0" data-widget-module-id="demo-app/widgets/lorem-picture">
+                </div>
+                <div class="media-object-section">
+                    <h5>Mike Stevenson</h5>
+
+                    <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An
+                        idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It
+                        can grow to define or destroy you</p>
+                </div>
+            </div>
+            <label>
+                My Review
+                <textarea placeholder="None"></textarea>
+            </label>
+            <button class="button">Submit Review</button>
+        </div>
+        <div class="tabs-panel" id="panel2">
+            <div class="row medium-up-3 large-up-5">
+                <div class="column">
+                    <img class="thumbnail" src="http://placehold.it/350x200">
+                    <h5>Other Product
+                        <small>$22</small>
+                    </h5>
+                    <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac
+                        euismod semper, magna diam.</p>
+                    <a href="#" class="button hollow tiny expanded">Buy Now</a>
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="http://placehold.it/350x200">
+                    <h5>Other Product
+                        <small>$22</small>
+                    </h5>
+                    <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac
+                        euismod semper, magna diam.</p>
+                    <a href="#" class="button hollow tiny expanded">Buy Now</a>
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="http://placehold.it/350x200">
+                    <h5>Other Product
+                        <small>$22</small>
+                    </h5>
+                    <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac
+                        euismod semper, magna diam.</p>
+                    <a href="#" class="button hollow tiny expanded">Buy Now</a>
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="http://placehold.it/350x200">
+                    <h5>Other Product
+                        <small>$22</small>
+                    </h5>
+                    <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac
+                        euismod semper, magna diam.</p>
+                    <a href="#" class="button hollow tiny expanded">Buy Now</a>
+                </div>
+                <div class="column">
+                    <img class="thumbnail" src="http://placehold.it/350x200">
+                    <h5>Other Product
+                        <small>$22</small>
+                    </h5>
+                    <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac
+                        euismod semper, magna diam.</p>
+                    <a href="#" class="button hollow tiny expanded">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row column">
+    <hr>
+    <ul class="menu">
+        <li>Yeti Store</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="float-right">Copyright 2016</li>
+    </ul>
+</div>
+<script src="/js/modules/demo-app-bundle.js"></script>
+
+</body>
+</html>

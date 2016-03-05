@@ -1,0 +1,22 @@
+{% set newHtmlElementUniqueId = uniqueId('form-result-') %}
+
+<div id="{{ newHtmlElementUniqueId }}" class="is-hidden">
+    <div class="form-response">
+        <p>
+            Thank you {{ emailAddress }}!
+        </p>
+        <p>
+            But our princess is in another castle...
+        </p>
+    </div>
+</div>
+
+<script>
+    (function () {
+        var $ = appRequire('jquery');
+        var $sourceForm = $('#{{ formId }}');
+        var $formReplacementContainer = $('#{{ newHtmlElementUniqueId }}');
+        $sourceForm.replaceWith($formReplacementContainer.html());
+        $formReplacementContainer.remove();
+    })();
+</script>

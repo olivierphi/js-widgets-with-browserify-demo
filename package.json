@@ -1,0 +1,40 @@
+{
+  "name": "widgets-with-browserify",
+  "version": "1.0.0",
+  "description": "Widgets with browserify demo: Node.js CLI build tools dependencies",
+  "author": "Olivier Philippon <olivier.philippon@knplabs.com> (http://rougemine.com/)",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npm install && npm run install:front && npm run build:css && npm run build:js",
+    "install:front": "cd front-end-assets/js && npm install && cd -",
+    "server": "node index.js",
+    "server:dev": "nodemon --watch lib index.js",
+    "watch:css": "watch \"npm run build:css\" front-end-assets/less/",
+    "build:css": "lessc --rootpath=front-end-assets/less front-end-assets/less/main.less web/css/demo-app-bundle.css",
+    "watch:js": "node bin/tasks/browserify/watch.js",
+    "build:js": "node bin/tasks/browserify/build.js",
+    "build": "npm run build:css & npm run build:js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.6.0",
+    "babelify": "^7.2.0",
+    "brfs": "^1.4.3",
+    "browserify": "^13.0.0",
+    "catw": "^1.0.1",
+    "colors": "^1.1.2",
+    "less": "^2.6.1",
+    "lodash": "^4.6.1",
+    "shelljs": "^0.6.0",
+    "shortid": "^2.2.4"
+  },
+  "devDependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "nodemon": "^1.9.1",
+    "nunjucks": "^2.4.0",
+    "watch": "^0.17.1",
+    "watchify": "^3.7.0"
+  }
+}

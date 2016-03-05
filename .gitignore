@@ -1,0 +1,7 @@
+/node_modules
+/front-end-assets/js/node_modules
+/web/css/*
+!/web/css/.gitkeep
+/web/js/*
+!/web/js/.gitkeep
+!/web/js/modules/.gitkeep
