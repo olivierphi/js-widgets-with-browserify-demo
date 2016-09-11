@@ -1,4 +1,4 @@
-# Toy project for [KNP Labs](http://knplabs.com) Hackathon #3 - a "JS Widgets with Browserify" demo
+# Demo project for my [KNP Labs](http://knplabs.com) colleagues - a "JS Widgets with Browserify" demo
 
 ## Install
 
